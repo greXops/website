@@ -67,6 +67,7 @@ function AwsIPRanges() {
           <img
             className={styles.titleLogo}
             src="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+            alt="AWS Logo"
           />
           <h4>AWS Public IP Address Ranges</h4>
         </div>

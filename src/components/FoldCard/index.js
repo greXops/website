@@ -10,7 +10,7 @@ function FoldCard(props) {
       <Link to={card.link}>
         <div className={styles.UserCard}>
           <div className={styles.UserCardTop}>
-            <img src={card.picture} />
+            <img src={card.picture} alt="Card Image" />
           </div>
           <div className={styles.UserCardBottom}>
             {card.name}
