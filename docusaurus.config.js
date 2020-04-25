@@ -8,6 +8,7 @@ module.exports = {
   projectName: "greXops",
   themes: ["@docusaurus/theme-live-codeblock"],
   themeConfig: {
+    defaultDarkMode: true,
     announcementBar: {
       id: "greXops",
       content:
