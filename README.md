@@ -1,5 +1,7 @@
 # The greXops Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d89e5a27-f9d9-4cc2-bb28-ca862cf93a70/deploy-status)](https://app.netlify.com/sites/grexops/deploys)
+
 This website is built using Docusaurus 2, a modern static website generator.
 
 ## Installation
