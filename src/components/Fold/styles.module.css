@@ -1,0 +1,122 @@
+div.fold {
+  border-bottom: 2px solid var(--ifm-heading-color);
+  padding-bottom: 3px;
+}
+
+div.fold > button.fold_trigger {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0.5rem;
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  height: auto;
+  text-align: start;
+  color: var(--ifm-tabs-color);
+  font-weight: var(--ifm-font-weight-bold);
+}
+
+div.fold > button.fold_trigger > span.circle {
+  -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 1s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--ifm-heading-color);
+  border-radius: 1.625rem;
+}
+
+button.fold_trigger > span.circle > span.icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.fold_trigger > span.circle > span.icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.fold_trigger > span.circle > span.icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+button.fold_trigger span.button_text {
+  -webkit-transition: all 1.1s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 1.1s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--ifm-tabs-color);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+button.fold_trigger:hover > span.circle {
+  width: 100% !important;
+}
+
+button.fold_trigger:hover > span.circle > span.icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+  transform: translate(1rem, 0);
+}
+
+button.fold_trigger:hover span.button_text {
+  color: #fff;
+}
+
+div.fold > button.fold_trigger::before {
+  display: block;
+  float: left;
+  padding-right: 1rem;
+  transition: transform 400ms;
+  transform-origin: 20%;
+  color: rgba(34, 36, 38, 0.35);
+}
+
+div.fold > button.fold_trigger.open::before {
+  transform: rotateZ(-180deg);
+}
+
+div.fold > div.fold_content {
+  max-height: 0;
+  overflow: auto;
+  transition: max-height 400ms ease;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, [col-start] minmax(170px, 1fr) [col-end]);
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  grid-template-rows: auto;
+  margin: 3px 7px 0px 7px;
+}
+
+div.fold > div.fold_content.open {
+  max-height: 516px;
+}

@@ -1,0 +1,42 @@
+.container {
+  width: 75vw;
+  margin: auto;
+}
+
+.twitterTimelineFlexContainer {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5rem 0.5rem;
+  -ms-grid-columns: auto 0.5rem auto 0.5rem auto;
+  grid-template-columns: auto auto auto;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 966px) {
+  .twitterTimelineFlexContainer {
+    grid-template-columns: auto auto;
+  }
+  .container {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .twitterTimelineFlexContainer {
+    grid-template-columns: auto;
+  }
+  .container {
+    width: 99vw;
+    margin: auto;
+  }
+}
+
+.twitterTimelineFlexItem {
+  height: 40rem;
+  width: auto;
+  font-weight: bold;
+  font-size: 1em;
+  flex-basis: 100%
+}

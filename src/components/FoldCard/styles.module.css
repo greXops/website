@@ -1,0 +1,112 @@
+.containers {
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background-position: center center;
+  background-size: cover;
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: -webkit-fill-available;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.tags {
+  background-color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 3px;
+  width: 60px;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.titles {
+  font-weight: 900;
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+.subtitles {
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+.cta {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: var(--ifm-heading-color);
+  padding: 10px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.ctatext {
+  font-weight: 500;
+}
+
+.UserCard {
+  width: 170px;
+  height: 220px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: var(--ifm-heading-color);
+}
+
+.UserCard:hover {
+  transform: scale(0.98);
+}
+
+.UserCard:hover img {
+  transform: scale(1.03);
+}
+
+.UserCard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.UserCardTop {
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+.UserCardBottom {
+  display: block;
+  margin: 0 5px 2px;
+  color: #fff;
+}
+
+.CardUserName {
+  color: #fff;
+  font-weight: var(--ifm-heading-font-weight);
+}
+
+.CardUserName:hover {
+  color: #000;
+}

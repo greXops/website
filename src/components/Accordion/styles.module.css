@@ -1,0 +1,10 @@
+.accordion {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0%;
+  overflow-y: auto;
+  border-top: 3px inset var(--ifm-heading-color);
+}
