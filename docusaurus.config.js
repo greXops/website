@@ -20,13 +20,13 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("./src/plugins/prism_themes/monokai"),
     },
-    image: "img/grexops-logo_blue.svg",
+    image: "img/grexops-logo_blue_55px.webp",
     navbar: {
       title: "",
       logo: {
         alt: "greXops Logo",
-        src: "img/grexops-logo_blue.png",
-        srcDark: "img/grexops-logo_yellow.png",
+        src: "img/grexops-logo_blue_55px.webp",
+        srcDark: "img/grexops-logo_yellow_55px.webp",
         href: "https://grexops.com/",
         target: "_self",
       },
@@ -118,7 +118,7 @@ module.exports = {
       ],
       logo: {
         alt: 'greXops Logo',
-        src: 'img/grexops-logo_yellow.png',
+        src: 'img/grexops-logo_yellow_55px.webp',
       },
       copyright: `Copyright © ${new Date().getFullYear()} - Designed by greXops. Built with Docusaurus`,
     },

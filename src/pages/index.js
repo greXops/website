@@ -223,7 +223,7 @@ function Home() {
               </div>
             </div>
             <div className={classnames("col col--5")}>
-              <img className={styles.heroImg} src="img/Mexican2.svg" />
+              <img className={styles.heroImg} alt="MexicanHero" src="img/Mexican2.svg" />
             </div>
           </div>
         </div>
