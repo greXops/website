@@ -42,14 +42,23 @@ Configure **user information** for **all local repositories**.
 
 ### Delete All Remote Branches
 
-```sh
-~$ REMOTE="origin" && MASTER="master" && DEVELOP="development" && RELEASE="release" && IRDETO="irdeto"
+:::info
+Deleting all remote branches except some specified branches such as **master,release**
+:::
 
-# Will Deleted
-~$ git branch -r |  grep "^  ${REMOTE}/" | sed "s|^  ${REMOTE}/|:|" | grep -v "^:HEAD" | grep -v "^:${MASTER}$" | grep -v "^:${RELEASE}$" | grep -v "^:${DEVELOP}$" | grep -v "^:${IRDETO}$" | xargs echo
+```bash
+user@pc:~$ REMOTE="origin" && MASTER="master" && RELEASE="release"
 
-# Attention -- DELETE Branches
-~$ git branch -r |  grep "^  ${REMOTE}/" | sed "s|^  ${REMOTE}/|:|" | grep -v "^:HEAD" | grep -v "^:${MASTER}$" | grep -v "^:${RELEASE}$" | grep -v "^:${DEVELOP}$" | grep -v "^:${IRDETO}$" | xargs git push ${REMOTE}
+# List branches to delete
+user@pc:~$ git branch -r |  grep "^  ${REMOTE}/" | sed "s|^  ${REMOTE}/|:|" | grep -v "^:HEAD" | grep -v "^:${MASTER}$" | grep -v "^:${RELEASE}$" | xargs echo
+```
+
+:::caution
+Warning! The following script causes **deletion** of **remote branches**!
+:::
+
+```bash
+user@pc:~$ git branch -r |  grep "^  ${REMOTE}/" | sed "s|^  ${REMOTE}/|:|" | grep -v "^:HEAD" | grep -v "^:${MASTER}$" | grep -v "^:${RELEASE}$" | xargs git push ${REMOTE}
 ```
 
 ## Make a Change
