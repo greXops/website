@@ -40,7 +40,7 @@
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  color: var(--ifm-font-base-color) !important;
+  color: var(--ifm-font-color-base) !important;
 }
 
 .dropdownList {
@@ -88,7 +88,7 @@
   border: 1px solid var(--ifm-background-surface-color);
   border-radius: var(--ifm-global-radius);
   box-shadow: var(--ifm-panel-box-shadow);
-  color: var(--ifm-font-base-color);
+  color: var(--ifm-font-color-base);
   display: block;
   margin-bottom: var(--ifm-spacing-vertical);
   padding: calc(var(--ifm-spacing-vertical) * 1.5)
@@ -134,7 +134,7 @@
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    color: var(--ifm-font-base-color) !important;
+    color: var(--ifm-font-color-base) !important;
   }
   .submitButton {
     width: 250px;
