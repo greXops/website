@@ -40,6 +40,18 @@ Configure **user information** for **all local repositories**.
 | `git merge <from branch>` | Merge specified **from branch** into the your **current branch - HEAD** branch. |
 | `git branch -d [branch-name]` | Remove selected branch, if it is already merged into any other. To *force* deletion use **-D** instead of **-d**. |
 
+### Delete All Remote Branches
+
+```sh
+~$ REMOTE="origin" && MASTER="master" && DEVELOP="development" && RELEASE="release" && IRDETO="irdeto"
+
+# Will Deleted
+~$ git branch -r |  grep "^  ${REMOTE}/" | sed "s|^  ${REMOTE}/|:|" | grep -v "^:HEAD" | grep -v "^:${MASTER}$" | grep -v "^:${RELEASE}$" | grep -v "^:${DEVELOP}$" | grep -v "^:${IRDETO}$" | xargs echo
+
+# Attention -- DELETE Branches
+~$ git branch -r |  grep "^  ${REMOTE}/" | sed "s|^  ${REMOTE}/|:|" | grep -v "^:HEAD" | grep -v "^:${MASTER}$" | grep -v "^:${RELEASE}$" | grep -v "^:${DEVELOP}$" | grep -v "^:${IRDETO}$" | xargs git push ${REMOTE}
+```
+
 ## Make a Change
 
 Working with the **Git Staging Area** and **Snapshots**.
